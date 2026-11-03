@@ -37,12 +37,12 @@ Every file starts with a comment `// case: jNN`, so a row's file path maps to it
 |----|--------|---------------|------------|
 | j01 | `j01-aes-ecb-control` | A direct `Cipher.getInstance("AES/ECB/PKCS5Padding")` call (control) | fixture author |
 | j02 | `j02-md5-control` | A direct `MessageDigest.getInstance("MD5")` call (control) | fixture author |
-| j03 | `j03-keygen-size` | `KeyGenerator.getInstance("AES")` then `init(256)` (key size) | maintainer, pending |
+| j03 | `j03-keygen-size` | `KeyGenerator.getInstance("AES")` then `init(256)` (key size) | fixture author |
 | j04 | `j04-constant-same-class` | The algorithm is a constant in the same class | fixture author |
 | j05 | `j05-constant-in-other-class` | The algorithm is a constant in another class | fixture author |
-| j06 | `j06-env-var` | The algorithm comes from an environment variable | maintainer, pending |
+| j06 | `j06-env-var` | The algorithm comes from an environment variable | fixture author |
 | j07 | `j07-repeat-calls` | The same call twice in one file and once in a second file | fixture author |
-| j08 | `j08-wrapper` | A wrapper method called with `"AES"` | maintainer, pending |
+| j08 | `j08-wrapper` | A wrapper method called with `"AES"` | fixture author |
 | j09 | `j09-test-dir-only` | Crypto only under `src/test/` | fixture author |
 | j10 | `j10-vendor-only` | Crypto only under `vendor/` | fixture author |
 
